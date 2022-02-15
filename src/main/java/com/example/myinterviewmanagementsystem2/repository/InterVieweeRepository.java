@@ -14,7 +14,5 @@ public interface InterVieweeRepository extends JpaRepository<Interviewee, Long> 
     @Query("SELECT u FROM Interviewee u WHERE u.ssc_yr = :year")
     public Interviewee findbySSCYear(@Param("university") String year);
 
-    }
-
     // so on
 }

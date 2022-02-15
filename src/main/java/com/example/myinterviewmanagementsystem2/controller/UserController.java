@@ -26,7 +26,7 @@ public class UserController {
     @PreAuthorize("hasAnyRole('MODERATOR', 'ADMIN')")
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
     public User getOne(@PathVariable(value = "id") Long id){
-        return userService.findById(id);
+        return userService.loadById(id);
     }
 
     @PreAuthorize("hasRole('ADMIN')")

@@ -25,8 +25,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return UserDetailsImpl.build(user);
     }
 
+//    public User loadById(long id){
+//        return userRepository.findById(id);
+//    }
 
-    public List<User> findAll(){
-        return userRepository.findAll();
-    }
+//    public List<User> findAll(){
+//        return userRepository.findAll();
+//    }
 }

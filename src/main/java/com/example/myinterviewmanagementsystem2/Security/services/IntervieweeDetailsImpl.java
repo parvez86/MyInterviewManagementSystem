@@ -12,19 +12,19 @@ public class IntervieweeDetailsImpl{
         return repository.findById(id);
     }
 
-    public Optional<> findbyUniversity(String university) throws {
-        User user = userRepository.getUserByUsername(username);
-
-        if (user == null) {
-            throw new UsernameNotFoundException("Could not find user");
-        }
-
-        return new MyUserDetails(user);
-        return repository.findById(university);
-    }
-
-    public Optional<String> findbyUniversity(String university){
-        return repository.findById(university);
-    }
+//    public Optional<> findbyUniversity(String university) throws {
+//        User user = userRepository.getUserByUsername(username);
+//
+//        if (user == null) {
+//            throw new UsernameNotFoundException("Could not find user");
+//        }
+//
+//        return new MyUserDetails(user);
+//        return repository.findById(university);
+//    }
+//
+//    public Optional<String> findbyUniversity(String university){
+//        return repository.findById(university);
+//    }
 
 }
