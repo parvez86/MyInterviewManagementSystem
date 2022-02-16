@@ -12,7 +12,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "roles", uniqueConstraints = {@UniqueConstraint(columnNames = {"username"})})
+@Table(name = "roles", uniqueConstraints = {@UniqueConstraint(columnNames = {"id"})})
+//@Table(name = "roles", uniqueConstraints = {@UniqueConstraint(columnNames = {"id"})})
 public class Role {
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)

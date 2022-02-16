@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
@@ -25,11 +26,11 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return UserDetailsImpl.build(user);
     }
 
-//    public User loadById(long id){
-//        return userRepository.findById(id);
-//    }
+    public Optional<User> loadById(long id) throws UsernameNotFoundException{
+            return userRepository.findById(id);
+    }
 
-//    public List<User> findAll(){
-//        return userRepository.findAll();
-//    }
+    public List<User> getFindAll(){
+        return userRepository.findAll();
+    }
 }
